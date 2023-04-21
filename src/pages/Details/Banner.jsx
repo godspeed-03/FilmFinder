@@ -42,7 +42,8 @@ const DetailsBanner = ({ video, crew }) => {
           {!!data && (
             <React.Fragment>
               <div className="backdrop-img">
-                <img src={url.backdrop + data.backdrop_path} />
+                {/* <img  /> */}
+                <img className="w-full h-full object-cover object-center" src={url.backdrop + data.backdrop_path} alt="" />
               </div>
               <div className="opacity-layer"></div>
               <ContentWrapper>
@@ -54,7 +55,7 @@ const DetailsBanner = ({ video, crew }) => {
                         src={url.backdrop + data.poster_path}
                       />
                     ) : (
-                      <img className="posterImg" src={PosterFallback} />
+                      <img className="w-full h-full object-cover object-center" src={PosterFallback} alt="" />
                     )}
                   </div>
                   <div className="right">
