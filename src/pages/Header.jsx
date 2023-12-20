@@ -72,7 +72,8 @@ export default function Header() {
   return (
     <header className={`header ${mobileMenu ? "mobileView" : ""} ${show}`}>
             <ContentWrapper>
-                <div className="logo" onClick={() => navigate("/")}>
+<div className="headerdiv flex items-center justify-between">
+<div className="logo" onClick={() => navigate("/")}>
                     <img src={logo} alt="" />
                 </div>
                 <ul className="menuItems md:flex max-md:hidden">
@@ -101,6 +102,7 @@ export default function Header() {
                         <SlMenu onClick={openMobileMenu} />
                     )}
                 </div>
+</div>
             </ContentWrapper>
             {showSearch && (
                 <div className="searchBar">
