@@ -31,23 +31,24 @@ const Footer = () => {
         </div>
         <div className="socialIcons">
           <span className="icon">
-            <a href="https://satyamio.netlify.app" target="_blank" rel="noopener noreferrer">
+            <a href="https://satyamio.netlify.app" target="_blank">
               <FaUserAstronaut />
             </a>
           </span>
           <span className="icon">
-            <a href="https://drive.google.com/file/d/1UMHDPk1LEtIsOm-s-EQk0IkpdusBFkmi/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1Gtr9wA_NxJPtjfS--LQOaRZTALpd1zUb/view?usp=sharing" target="_blank">
               <FaRegFilePdf />
             </a>
           </span>
           <span className="icon">
-            <a href="https://www.linkedin.com/in/satyam-anand-951b5621b" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/satyam-anand-951b5621b" target="_blank">
               <FaLinkedin />
             </a>
           </span>
           <span className="icon">
-            <a href="https://github.com/godspeed-03" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://github.com/godspeed-03" target="_blank">
             <FaGithub />
+            </a>
           </span>
         </div>
       </ContentWrapper>
