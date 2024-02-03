@@ -51,13 +51,13 @@ export default function Header() {
   };
 
   const openSearch = () => {
-      setMobileMenu(false);
+    //   setMobileMenu(false);
       setShowSearch(true);
   };
 
   const openMobileMenu = () => {
       setMobileMenu(true);
-      setShowSearch(false);
+    //   setShowSearch(false);
   };
 
   const navigationHandler = (type) => {
@@ -95,7 +95,7 @@ export default function Header() {
                 </ul>
 
                 <div className="mobileMenuItems md:hidden max-md:flex ">
-                    <HiOutlineSearch onClick={openSearch} />
+                        <HiOutlineSearch className="max-md:hidden" onClick={openSearch} />
                     {mobileMenu ? (
                         <VscChromeClose onClick={() => setMobileMenu(false)} />
                     ) : (
