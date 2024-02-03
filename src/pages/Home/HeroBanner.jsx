@@ -17,7 +17,7 @@ export default function HeroBanner() {
 
   useEffect(() => {
     const background =
-      url.backdrop +
+      url?.backdrop +
       data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
     setBg(background);
   }, [data]);
