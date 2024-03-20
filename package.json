@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@esbuild/linux-x64": "^0.20.0",
     "@reduxjs/toolkit": "^1.9.5",
     "dayjs": "^1.11.7",
     "react": "^18.2.0",

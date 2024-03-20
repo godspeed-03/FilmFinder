@@ -9,6 +9,7 @@ import useFetch from "../../useFetch";
 
 export default function HeroBanner() {
   const [bg, setBg] = useState("");
+  const [defbg, setDefBg] = useState("");
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
   const { url } = useSelector((state) => state.home);
@@ -22,6 +23,9 @@ export default function HeroBanner() {
     setBg(background);
   }, [data]);
 
+  const defBg = url?.backdrop +
+  data?.results?.[1]?.backdrop_path
+
   const searchQueryHandler = (event) => {
     if (
       query.length > 0 &&
@@ -34,7 +38,7 @@ export default function HeroBanner() {
     <div className="w-full h-[450px] bg-[#024049] flex items-center md:h-[700px]   ">
       {!loading && (
         <div className="image w-full h-full absolute top-0 left-0 opacity-50 overflow-hidden  ">
-          <img className="w-full h-full object-cover" src={bg} alt="" />
+          <img className="w-full h-full object-cover" src={bg??defBg} alt="" />
         </div>
       )}
 

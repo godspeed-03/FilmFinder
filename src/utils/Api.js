@@ -1,6 +1,7 @@
 const Base_URL = 'https://api.themoviedb.org/3';
 
 const TMDB_token = import.meta.env.VITE_APIKEY;
+console.log(TMDB_token)
 
 export const fetchDataFromApi = async (url, params) => {
     try {
