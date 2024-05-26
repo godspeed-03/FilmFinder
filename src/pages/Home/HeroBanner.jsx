@@ -20,11 +20,22 @@ export default function HeroBanner() {
     const background =
       url?.backdrop +
       data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
-    setBg(background);
+    if(background && background.endsWith('.jpg')){
+      setBg(background)
+
+    }
+    
+
+    
   }, [data]);
 
   const defBg = url?.backdrop +
   data?.results?.[1]?.backdrop_path
+
+
+  if(bg && !bg.endsWith('.jpg')){
+    setBg(defBg)
+  }
 
   const searchQueryHandler = (event) => {
     if (
@@ -38,7 +49,7 @@ export default function HeroBanner() {
     <div className="w-full h-[450px] bg-[#024049] flex items-center md:h-[700px]   ">
       {!loading && (
         <div className="image w-full h-full absolute top-0 left-0 opacity-50 overflow-hidden  ">
-          <img className="w-full h-full object-cover" src={bg??defBg} alt="" />
+          <img className="w-full h-full object-cover" src={bg} alt="" />
         </div>
       )}
 
