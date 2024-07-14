@@ -1,4 +1,4 @@
-import  {React, useState, useEffect } from "react";
+import { React, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "./banner.scss";
@@ -20,21 +20,15 @@ export default function HeroBanner() {
     const background =
       url?.backdrop +
       data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
-    if(background && background.endsWith('.jpg')){
-      setBg(background)
-
+    if (background && background.endsWith(".jpg")) {
+      setBg(background);
     }
-    
-
-    
   }, [data]);
 
-  const defBg = url?.backdrop +
-  data?.results?.[1]?.backdrop_path
+  const defBg = url?.backdrop + data?.results?.[1]?.backdrop_path;
 
-
-  if(bg && !bg.endsWith('.jpg')){
-    setBg(defBg)
+  if (bg && !bg.endsWith(".jpg")) {
+    setBg(defBg);
   }
 
   const searchQueryHandler = (event) => {
