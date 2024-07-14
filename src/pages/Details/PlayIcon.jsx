@@ -30,7 +30,7 @@ export const PlayIcon = () => {
                 strokeMiterlimit="10"
                 cx="106.8"
                 cy="106.8"
-                r="103.3"
+                r="104"
             ></circle>
         </svg>
     );
