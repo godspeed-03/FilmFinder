@@ -30,12 +30,12 @@ const Footer = () => {
           pariatur.
         </div>
         <div className="socialIcons">
-            <a href="https://satyamio.netlify.app" target="_blank">
+            <a href="https://nxtdev.in" target="_blank">
           <span className="icon">
               <FaUserAstronaut />
           </span>
             </a>
-            <a href="https://drive.google.com/file/d/1Gtr9wA_NxJPtjfS--LQOaRZTALpd1zUb/view?usp=sharing" target="_blank">
+            <a href="https://bit.ly/satyamweb" target="_blank">
           <span className="icon">
               <FaRegFilePdf />
           </span>
