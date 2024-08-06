@@ -1,10 +1,8 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { fetchDataFromApi } from "./utils/Api";
 import { useSelector, useDispatch } from "react-redux";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// iopip
 import { getApiConfig, getGenreConfig } from "./store/Homesclice";
-
 import Details from "./pages/Details/Details";
 import Error from "./pages/Error";
 import Explore from "./pages/Explore";
