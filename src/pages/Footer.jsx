@@ -35,7 +35,7 @@ const Footer = () => {
               <FaUserAstronaut />
           </span>
             </a>
-            <a href="https://bit.ly/satyamweb" target="_blank">
+            <a href="https://bit.ly/satyam_resume_cv" target="_blank">
           <span className="icon">
               <FaRegFilePdf />
           </span>
